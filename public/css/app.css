@@ -6126,6 +6126,9 @@ header section span {
 header section input {
   border-radius: 5px;
 }
+header section ::placeholder {
+  font-style: italic;
+}
 header section button {
   background-color: lightgreen;
   color: white;
@@ -6135,6 +6138,40 @@ header section button {
 header section img {
   width: 40px;
   opacity: 50%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px lightgrey;
+}
+nav .logo2 {
+  border-right: solid 1px lightgrey;
+}
+nav img {
+  width: 100px;
+  margin: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  padding: 10px;
+}
+nav ul :last-of-type a {
+  padding-left: 70px;
+}
+nav ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: black;
+}
+nav ul :nth-child(2) {
+  text-decoration: underline 2px;
 }
 
 body {
