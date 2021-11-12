@@ -6144,6 +6144,27 @@ header section img {
   opacity: 50%;
 }
 
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  header section {
+    width: 100%;
+  }
+  header section span {
+    font-size: 10px;
+  }
+  header section input {
+    height: 10px;
+  }
+  header section ::placeholder {
+    font-size: 10px;
+  }
+  header section button {
+    height: 10px;
+    font-size: 10px;
+  }
+  header section img {
+    display: none;
+  }
+}
 nav {
   display: flex;
   align-items: center;
@@ -6178,6 +6199,34 @@ nav ul :nth-child(2) {
   text-decoration: underline 2px;
 }
 
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  nav .logo2 {
+    display: none;
+  }
+  nav ul {
+    margin: 0;
+    padding-left: 0;
+  }
+  nav ul li {
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  nav ul :last-of-type a {
+    padding: 0;
+  }
+  nav ul a {
+    font-size: 5px;
+  }
+  nav ul :nth-child(2) {
+    text-decoration: none;
+  }
+}
 #contenu {
   margin-right: 120px;
   margin-left: 120px;
@@ -6214,6 +6263,32 @@ nav ul :nth-child(2) {
   margin-left: -30px;
 }
 
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  #contenu {
+    margin: 20px;
+  }
+  #contenu h1 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  #contenu hr {
+    margin-bottom: 0;
+  }
+  #contenu p {
+    font-size: 10px;
+  }
+  #contenu ul {
+    margin: 10px;
+  }
+  #contenu ul li {
+    font-size: 10px;
+    margin: 5px;
+  }
+  #contenu h2 {
+    font-size: 12px;
+    text-align: center;
+  }
+}
 footer {
   background: 500px;
   background-color: #33322c;
@@ -6253,6 +6328,37 @@ footer p {
   text-align: center;
 }
 
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  footer {
+    height: 110px;
+  }
+
+  .section i {
+    margin-top: 0px;
+    padding: 10px;
+    border: none;
+    border-radius: none;
+  }
+
+  footer div a {
+    margin: 0px;
+    border: none;
+    border-radius: none;
+  }
+
+  span {
+    font-size: 0px;
+  }
+
+  img[alt=logo2] {
+    height: 20px;
+    margin: 0;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+}
 body {
   margin: 0;
   font-style: sans-serif;
