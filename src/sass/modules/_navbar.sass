@@ -1,6 +1,7 @@
 nav
     display: flex
     align-items: center
+    justify-content: space-between
     border-bottom: solid 1px lightgrey
     .logo2
         border-right: solid 1px lightgrey
@@ -9,14 +10,17 @@ nav
         margin: 40px
         margin-top: 10px
         margin-bottom: 10px
-    ul 
+    ul
         display: flex
         li
+            display: flex
+            justify-content: flex-end
             list-style: none
             padding: 10px
         :last-of-type a
             padding-left: 70px
-        a 
+            padding-right: 40px
+        a
             text-decoration: none
             text-transform: uppercase
             font-size: 10px
@@ -24,24 +28,43 @@ nav
         :nth-child(2)
             text-decoration: underline 2px
 
-@media screen and(min-width:375px) and(max-width:425px) 
+@media screen and(min-width:375px) and(max-width:425px)
     nav
         width: 100%
         display: flex
         justify-content: center
         .logo2
             display: none
-        ul 
+        ul
             margin: 0
             padding-left: 0
             li
                 padding: 0
                 margin-left: 5px
                 margin-right: 5px
-            :last-of-type a 
+            :last-of-type a
                 padding: 0
             a
                 font-size: 5px
             :nth-child(2)
                 text-decoration: none
-            
+
+@media screen and(min-width:426px) and(max-width:768px)
+    nav
+    .logo2
+        border-right: solid 1px lightgrey
+        img
+            width: 80px
+            margin: 5px
+            margin-top: 10px
+            margin-bottom: 10px
+    nav
+        ul
+            padding: 0px
+            li
+                padding: 10px
+            :last-of-type a
+                padding-left: 0
+        a
+            font-size: 10px
+            padding: px

@@ -6165,9 +6165,28 @@ header section img {
     display: none;
   }
 }
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  header section {
+    width: 100%;
+  }
+  header section span {
+    font-size: 15px;
+  }
+  header section input {
+    height: 15px;
+  }
+  header section ::placeholder {
+    font-size: 15px;
+  }
+  header section button {
+    height: 20px;
+    font-size: 15px;
+  }
+}
 nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-bottom: solid 1px lightgrey;
 }
 nav .logo2 {
@@ -6183,11 +6202,14 @@ nav ul {
   display: flex;
 }
 nav ul li {
+  display: flex;
+  justify-content: flex-end;
   list-style: none;
   padding: 10px;
 }
 nav ul :last-of-type a {
   padding-left: 70px;
+  padding-right: 40px;
 }
 nav ul a {
   text-decoration: none;
@@ -6225,6 +6247,31 @@ nav ul :nth-child(2) {
   }
   nav ul :nth-child(2) {
     text-decoration: none;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .logo2 {
+    border-right: solid 1px lightgrey;
+  }
+  .logo2 img {
+    width: 80px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    padding: 0px;
+  }
+  nav ul li {
+    padding: 10px;
+  }
+  nav ul :last-of-type a {
+    padding-left: 0;
+  }
+  nav a {
+    font-size: 10px;
+    padding: px;
   }
 }
 #contenu {
@@ -6359,6 +6406,12 @@ footer p {
     font-size: 10px;
   }
 }
+.section i {
+  border: none;
+  border-radius: none;
+  height: 20px;
+}
+
 body {
   margin: 0;
   font-style: sans-serif;
